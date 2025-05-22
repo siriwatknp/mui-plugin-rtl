@@ -11,6 +11,7 @@ import {
   KEYFRAMES,
   MEDIA,
   SUPPORTS,
+  LAYER,
 } from 'stylis';
 
 type MiddlewareParams = Parameters<Middleware>;
@@ -50,7 +51,7 @@ function stylisRTLPlugin(
   if (
     element.type === KEYFRAMES ||
     element.type === SUPPORTS ||
-    (element.type === RULESET && (!element.parent || element.parent.type === MEDIA || element.parent.type === RULESET))
+    (element.type === RULESET && (!element.parent || element.parent.type === MEDIA || element.parent.type === RULESET || element.parent.type === LAYER))
   ) {
     const stringified = cssjanus.transform(stringifyPreserveComments(element, index, children));
 

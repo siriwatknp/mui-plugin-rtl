@@ -132,4 +132,43 @@ describe('integration test with stylis', () => {
       `)
     ).toMatchInlineSnapshot(`".cls{margin-left:32px;}.cls .first-child{margin-left:32px;}"`);
   });
+
+  it("works for layer rules", () => {
+    expect(
+      stylis(`
+        @layer default {
+          .cls {
+            margin-right: 32px;
+            & .first-child {
+              margin-right: 32px;
+            }
+          }
+        }
+      `)
+    ).toMatchInlineSnapshot(
+      `"@layer default{.cls{margin-left:32px;}.cls .first-child{margin-left:32px;}}"`
+    );
+  });
+
+  it("works for nested layer rules", () => {
+    expect(
+      stylis(`
+        @layer root {
+          .foo {
+            margin-right: 32px;
+          }
+          @layer default {
+            .cls {
+              margin-right: 32px;
+              & .first-child {
+                margin-right: 32px;
+              }
+            }
+          }
+        }
+      `)
+    ).toMatchInlineSnapshot(
+      `"@layer root{.foo{margin-left:32px;}@layer default{.cls{margin-left:32px;}.cls .first-child{margin-left:32px;}}}"`
+    );
+  });
 });

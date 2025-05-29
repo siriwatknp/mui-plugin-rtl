@@ -1,4 +1,4 @@
-# mui-rtl-plugin
+# mui-plugin-rtl
 
 Stylis RTL plugin based on CSSJanus
 
@@ -9,20 +9,20 @@ Stylis RTL plugin based on CSSJanus
 ### v1
 
 ```shell
-yarn add mui-rtl-plugin@^1
+yarn add mui-plugin-rtl@^1
 ```
 
 ### v2
 
 ```shell
-yarn add mui-rtl-plugin stylis
+yarn add mui-plugin-rtl stylis
 ```
 
 ## Usage with styled-components v5+
 
 ```javascript
 import styled, { StyleSheetManager } from "styled-components";
-import rtlPlugin from "mui-rtl-plugin";
+import rtlPlugin from "mui-plugin-rtl";
 
 const Box = styled.div`
   padding-left: 10px;

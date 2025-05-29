@@ -1,5 +1,5 @@
 {
-  "name": "mui-rtl-plugin",
+  "name": "mui-plugin-rtl",
   "version": "2.2.0",
   "description": "Fork of stylis-plugin-rtl to fix the CSS layer issue, uses cssjanus under the hood to flip style orientations for RTL",
   "module": "dist/stylis-rtl.js",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siriwatknp/mui-rtl-plugin.git"
+    "url": "git+https://github.com/siriwatknp/mui-plugin-rtl.git"
   },
   "keywords": [
     "rtl",
@@ -35,9 +35,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/siriwatknp/mui-rtl-plugin/issues"
+    "url": "https://github.com/siriwatknp/mui-plugin-rtl/issues"
   },
-  "homepage": "https://github.com/siriwatknp/mui-rtl-plugin#readme",
+  "homepage": "https://github.com/siriwatknp/mui-plugin-rtl#readme",
   "peerDependencies": {
     "stylis": "4.x"
   },

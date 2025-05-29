@@ -1,4 +1,4 @@
-# stylis-plugin-rtl
+# mui-rtl-plugin
 
 Stylis RTL plugin based on CSSJanus
 
@@ -9,20 +9,20 @@ Stylis RTL plugin based on CSSJanus
 ### v1
 
 ```shell
-yarn add stylis-plugin-rtl@^1
+yarn add mui-rtl-plugin@^1
 ```
 
 ### v2
 
 ```shell
-yarn add stylis-plugin-rtl stylis
+yarn add mui-rtl-plugin stylis
 ```
 
 ## Usage with styled-components v5+
 
 ```javascript
 import styled, { StyleSheetManager } from "styled-components";
-import rtlPlugin from "stylis-plugin-rtl";
+import rtlPlugin from "mui-rtl-plugin";
 
 const Box = styled.div`
   padding-left: 10px;
@@ -39,9 +39,10 @@ function MakeItRTL() {
 
 #### NOTE: Preventing flipping
 
-Because minification removes all comments from your CSS before it passes to `<StyleSheetManager>`, `/* @noflip */` comment won't work. 
+Because minification removes all comments from your CSS before it passes to `<StyleSheetManager>`, `/* @noflip */` comment won't work.
 You will have to either:
-- add an exclamation mark at the beginning of the comment, like this  `/*! @noflip */`, to prevent it from being removed
+
+- add an exclamation mark at the beginning of the comment, like this `/*! @noflip */`, to prevent it from being removed
 - disable minification entirely by setting `minify` to `false` in `.babelrc` (see [styled-components documentation](https://styled-components.com/docs/tooling#minification)).
 
-<small>This is a fork of `stylis-rtl` for use with styled-components v5+</small>
+<small>This is a fork of `stylis-plugin-rtl` for use with Material UI v5+</small>

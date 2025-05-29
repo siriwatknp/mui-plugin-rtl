@@ -1,7 +1,7 @@
 {
-  "name": "stylis-plugin-rtl",
-  "version": "2.1.1",
-  "description": "Fork of stylis-rtl, uses cssjanus under the hood to flip style orientations for RTL",
+  "name": "mui-rtl-plugin",
+  "version": "2.2.0",
+  "description": "Fork of stylis-plugin-rtl to fix the CSS layer issue, uses cssjanus under the hood to flip style orientations for RTL",
   "module": "dist/stylis-rtl.js",
   "main": "dist/cjs/stylis-rtl.js",
   "types": "dist/stylis-rtl.d.ts",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/styled-components/stylis-plugin-rtl.git"
+    "url": "git+https://github.com/siriwatknp/mui-rtl-plugin.git"
   },
   "keywords": [
     "rtl",
@@ -28,15 +28,16 @@
     "preprocessor",
     "styled-components"
   ],
-  "author": "Jop de Klein",
+  "author": "Siriwat K.",
   "contributors": [
-    "Evan Jacobs <probablyup@gmail.com> (https://probablyup.com)"
+    "Evan Jacobs <probablyup@gmail.com> (https://probablyup.com)",
+    "Siriwat K. (https://github.com/siriwatknp)"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/styled-components/stylis-plugin-rtl/issues"
+    "url": "https://github.com/siriwatknp/mui-rtl-plugin/issues"
   },
-  "homepage": "https://github.com/styled-components/stylis-plugin-rtl#readme",
+  "homepage": "https://github.com/siriwatknp/mui-rtl-plugin#readme",
   "peerDependencies": {
     "stylis": "4.x"
   },
